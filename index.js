@@ -85,7 +85,7 @@ const startSock = async () => {
         (await client.requestPairingCode(phoneNumber))
           ?.match(/.{1,4}/g)
           ?.join("-") || "";
-      console.log(`Your Pairing Code: `, color.green(code));
+      console.log(`Your Pairing Code: `, code);
     }, 3000);
   }
 
